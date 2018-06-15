@@ -17,10 +17,3 @@ class Artist < ActiveRecord::Base
     self.genres.count
   end
 end
-
-
-  describe '#genre_count' do
-    it 'returns the number of genres associated with the artist' do
-      expect(@prince.genre_count).to eq(1)
-    end
-  end
