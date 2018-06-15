@@ -12,8 +12,3 @@ class Song < ActiveRecord::Base
     self.artist
   end
 end
-
-  it '#drake_made_this' do
-    expect(@song.drake_made_this).to be_a(Artist)
-    expect(@song.drake_made_this.name).to eq("Drake")
-  end
