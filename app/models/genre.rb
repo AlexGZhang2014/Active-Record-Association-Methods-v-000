@@ -17,9 +17,3 @@ class Genre < ActiveRecord::Base
     self.artists.collect {|artist| artist.name}
   end
 end
-
-  describe '#all_artist_names' do 
-    it 'returns an array of strings containing every musicians name' do
-      expect(@genre.all_artist_names).to eq(["MJ", "Adele", "James Brown"])
-    end
-  end
