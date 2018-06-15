@@ -17,10 +17,6 @@ class Genre < ActiveRecord::Base
   end
 end
 
-  it '#artist_count' do
-    expect(@genre.artist_count).to eq(3)
-  end
-
   describe '#all_artist_names' do 
     it 'returns an array of strings containing every musicians name' do
       expect(@genre.all_artist_names).to eq(["MJ", "Adele", "James Brown"])
