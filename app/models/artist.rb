@@ -18,16 +18,6 @@ class Artist < ActiveRecord::Base
 end
 
 
-  describe '#song_count' do
-    it '#song_count' do
-      @prince.songs.create(name: "FUNKNROLL")
-      @prince.songs.create(name: "Little Red")
-      @prince.songs.create(name: "Batdance")
-
-      expect(@prince.song_count).to eq(4)
-    end
-  end
-
   describe '#genre_count' do
     it 'returns the number of genres associated with the artist' do
       expect(@prince.genre_count).to eq(1)
